@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mega Menú</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .menu-container {
+      background-color: #f7b51b;
+      padding: 10px 20px;
+    }
+
+    .menu-container ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .menu-container li {
+      position: relative;
+    }
+
+    .menu-container > ul > li {
+      margin-right: 30px;
+    }
+
+    .menu-container a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    .menu-container a:hover {
+      background-color: #f7b51b;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: white;
+      min-width: 250px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+      z-index: 1;
+      padding: 15px;
+    }
+
+    .dropdown h4 {
+      margin-top: 0;
+      color: #00457c;
+    }
+
+    .dropdown a {
+      color: #333;
+      padding: 5px 0;
+    }
+
+    .menu-container li:hover .dropdown {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="menu-container">
+  <ul>
+    <li>
+      <a href="https://duoccl0.sharepoint.com/:u:/s/actividades-duocvina/ERAwVIcVJ5lEhgF6udAndkcBcNJEUCjAV6VV0Tt7rN5UjQ?e=QC4SJD">Inicio</a>
+      <div class="dropdown">
+        <h4>Actividades Escuela</h4>
+        <a href="#">Actividades Programas Transversales</a><br>
+        <a href="#">Actividades Sede</a><br>
+        <a href="#">Actividades Punto Estudiantil</a>
+      </div>
+    </li>
+    <li>
+      <a href="#">Académico</a>
+      <div class="dropdown">
+        <h4>Información</h4>
+        <a href="#">Calendario académico</a><br>
+        <a href="#">Biblioteca digital</a><br>
+        <a href="#">Reglamento interno</a>
+      </div>
+    </li>
+    <li>
+      <a href="#">Soporte</a>
+      <div class="dropdown">
+        <h4>Contacto</h4>
+        <a href="#">Formulario de ayuda</a><br>
+        <a href="#">Chat en línea</a><br>
+        <a href="#">Canal Teams</a>
+      </div>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>
